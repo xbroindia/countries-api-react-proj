@@ -1,0 +1,42 @@
+.CountryDetailedShimmer.dark{
+    --background-color:hsl(207, 26%, 17%);
+    --element-color:hsl(208, 14%, 41%);
+}
+
+.CountryDetailedShimmer{
+    --element-color:rgb(195, 190, 190)
+}
+
+.pic{
+    height: 25rem;
+    width:43rem;
+    background-color:var(--element-color);
+    margin-top:5rem;
+    margin-left:2rem
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:7rem;
+    margin-top: 5rem;
+    gap:2rem;
+}
+
+.CountryDetailedShimmer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+.CountryDetailedData{
+    display: flex;
+}
+
+.label{
+    height:2.4rem;
+    width:40rem;
+    background-color:var(--element-color);
+}

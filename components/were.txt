@@ -1,0 +1,51 @@
+ .dark{
+      --backgroound-color:hsl(207, 26%, 17%);
+      --element-color:hsl(209, 23%, 22%);
+      --text-color:hsl(0, 0%, 100%)
+ }
+ .body{
+    --background-color: rgb(189, 194, 198);
+    --element-color: rgb(137, 140, 144);
+    --box-shaow:0.1rem 0.1rem 0.2rem rgb(147, 138, 138)
+ }
+ 
+ .shimmer_Effect{
+    height:24rem;
+    width:18rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow:var(--box-shaow);
+    background-color: var(--backgroound-color);
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;   
+}
+
+
+.country-img{ 
+     background-color:var(--element-color)         ;
+     height: 11rem; 
+ }
+
+ .country-head{
+    background-color:var(--element-color)        ;
+    height: 2rem; 
+    width: 14rem;
+    display: flex;
+    margin-left: 2rem;
+ }
+
+.country-text{
+    background-color:var(--element-color);
+    height: 2rem; 
+    width: 14rem;
+    display: flex;
+    margin-left: 2rem;
+}
+.country-text2{
+    background-color:var(--element-color);
+    height: 2rem; 
+    width: 14rem;
+    display: flex;
+    margin-left: 2rem;
+} 

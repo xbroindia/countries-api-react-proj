@@ -1,0 +1,55 @@
+.shimmer_Effect.dark{
+        --shimmer-background-color:hsl(213, 22%, 21%);
+        --shimmer-element-color:hsl(210, 64%, 66%);
+        --shimmer-box-shadow: 0.1rem 0.1rem 0.2rem rgb(147, 138, 138)
+}
+
+.shimmer_Effect{
+    --shimmer-background-color: rgb(189, 194, 198);
+    /* --shimmer-element-color: rgb(137, 140, 144); */
+    --shimmer-box-shadow:0.1rem 0.1rem 0.2rem rgb(147, 138, 138)
+ }
+ 
+ 
+.shimmer_Effect{
+    height:24rem;
+    width:18rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    /* box-shadow: 0.1rem 0.1rem 0.2rem rgb(147, 138, 138); */
+    box-shadow:var(--shimmer-box-shadow );
+    background-color:var(--shimmer-background-color);
+    display: flex;
+    flex-direction: column;
+    gap:2rem;   
+ }
+
+
+.country-img{ 
+     background-color:var(--shimmer-element-color);
+     height: 11rem; 
+ }
+
+ .country-head{
+    background-color:var(--shimmer-element-color);
+    height: 2rem; 
+    width: 14rem;
+    display: flex;
+    margin-left: 2rem;
+ }
+
+.country-text{
+    background-color:var(--shimmer-element-color)        ;
+    height: 2rem; 
+    width: 14rem;
+    display: flex;
+    margin-left: 2rem;
+}
+
+.country-text2{
+    background-color:var(--shimmer-element-color)      ;
+    height: 2rem; 
+    width: 14rem;
+    display: flex;
+    margin-left: 2rem;
+} 
