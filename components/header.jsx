@@ -9,7 +9,7 @@ const [ThemeChanger , setThemeChanger] =useContext(ThemeContext)
 
     return(
         <header className={`header-content ${ThemeChanger ? "dark" : ""}`}>
-        <h1>where in the world</h1>
+        <h1>where in the world?</h1>
         <button className="btn1" onClick={
            ()=>{
              setThemeChanger(!ThemeChanger)
