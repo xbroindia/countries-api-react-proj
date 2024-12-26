@@ -176,16 +176,17 @@ margin-left: 2rem;
     display: flex;
     align-items: center;
     justify-content:center;
-    gap:5rem;
+    gap:10rem;
     flex-wrap: wrap;
     background-color: var(--background-color);
     min-height: 100vh;
 } 
 
+
 .country{
     display: flex;
-    max-height:25rem;
-    max-width:18rem;
+    height:33rem;
+    width:25rem;
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 0.1rem 0.1rem 0.2rem var(--box-shadow);
@@ -194,35 +195,45 @@ margin-left: 2rem;
     transition: all 0.5s;   
     background-color: var(--element-color);
     color:var(--text-color);
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.country-info-card{
+    height: 33rem;
+    width:30rem
 }
 
 .country-card-info{
     display: flex;
     flex-direction: column;
-    margin-top:0.5rem;
+    margin-top:1.5rem;
     margin-bottom: 1rem;
     gap:1rem
 }
 
 .country img{
     height:100%;
-    width:100%;
+    width:25rem;
     object-fit:cover;
     background-position: center;
 }
 
 .flag-container{
-    height:12rem;
-    width:18rem;
+    height:18rem;
+    width: 100%;
+    box-sizing: border-box;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .country h3{
     font-weight: bolder;
-    font-size:1.7rem
+    font-size:2.1rem
 }
 .country p{
-   font-size:1.2rem;
+   font-size:1.5rem;
    margin-top:0.2rem
 }
 
@@ -424,13 +435,13 @@ margin-left: 2rem;
     gap:8rem;
     height: 150rem;
     margin-top: -30rem;
-    /* height: 140rem; */
+    height: 140rem;
 }
 }   
 
-@media(max-width:598px){
+/* @media(max-width:598px){
     html{
-        font-size:35%
+        font-size:75%
     }
     .country-data{
         display: flex;
@@ -446,4 +457,4 @@ margin-left: 2rem;
     html{
         font-size:28%
     }
-} 
+}  */

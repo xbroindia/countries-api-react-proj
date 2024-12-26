@@ -4,7 +4,7 @@ import { UseTheme } from '../Hooks/useTheme'
 
 export default function SkelatonEffect(){
 
-const Mape = Array.from({length:10})
+const Mape = Array.from({length:100})
 
 
 const [ThemeChanger] = UseTheme();
