@@ -185,8 +185,9 @@ margin-left: 2rem;
 
 .country{
     display: flex;
-    height:33rem;
-    width:25rem;
+    height:35rem;
+    width:20rem;
+    margin-inline: 10px;
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 0.1rem 0.1rem 0.2rem var(--box-shadow);

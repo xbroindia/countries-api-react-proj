@@ -10,9 +10,10 @@ const AllCountries =({InputData})=>{
 let[countries_data,setcountriesData]=useState([])
 
 
-useEffect(()=>{fetch('https://restcountries.com/v3.1/all')
+useEffect(()=>{fetch('https://restcountries.com/v3.1/all?fields=name,capital,region,population,flags,tld')
   .then((res)=> res.json())
   .then((data)=>{
+    console.log(data)
     setcountriesData(data)
   })
 },[])

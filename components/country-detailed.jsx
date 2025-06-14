@@ -18,11 +18,17 @@ const [ThemeChanger,setThemeChanger] =UseTheme()
 
 
 function updateData(country){
-    let populationNumber =Number(country.population)
+      let populationNumber = Number(country.population)
     let Population = populationNumber.toLocaleString("en-IN")
-    let NativeName= Object.values(country.name.nativeName).map((native)=>native.common)
-    let currencies= Object.values(country.currencies).map((currencies)=>currencies.name)
-    let language =Object.values(country.languages).map((lang)=>lang)
+    let NativeName = country.name && country.name.nativeName
+        ? Object.values(country.name.nativeName).map((native) => native.common)
+        : [country.name?.common || "N/A"];
+    let currencies = country.currencies
+        ? Object.values(country.currencies).map((currencies) => currencies.name)
+        : ["N/A"];
+    let language = country.languages
+        ? Object.values(country.languages).map((lang) => lang)
+        : ["N/A"];
     
     
         setCountryData(
@@ -31,7 +37,7 @@ function updateData(country){
                     nativename:NativeName.join(",") || country.name.common, 
                     population:Population || " Population Not Found",
                     capital:country.capital.join(',') || " Capital Not Found",
-                    domain:country.tld.join(',')|| "Domain Not Found ",
+                    domain:country.tld.join('') || "Domain Not Found ",
                     region:country.region || "Region Not Found",
                     subregion:country.subregion || "Sub Region Not Found",
                     currencies:currencies || "Currencies Not Found",
@@ -40,7 +46,7 @@ function updateData(country){
                     borders:[]
                 }
             )
-    
+    console.log(country)
     
     if(country.borders?.length){
                 Promise.all(
